@@ -26,7 +26,7 @@ function Pages() {
                 <Route path={'/junior-plus'} element={<JuniorPlus/>}/>
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
-                <Route path={'/error404'} element={<Error404/>}/>
+                <Route path={'/error404'} element={<Navigate to={'/error404'}/>}/>
             </Routes>
         </div>
     )
